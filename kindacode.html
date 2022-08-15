@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Log in page
+        </title>
+        <link rel="stylesheet" href="kinda.css">
+    </head>
+    <body>
+        <div id="container">
+            <form id="forms">
+                <h1>Kinda Code</h1>
+                <div id="email">
+                    <h4>Email</h4>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div id="password">
+                    <h4>Password</h4>
+                    <input type="password" name="password" placeholder="Your Password" id="pass1" onkeyup="return validate()">
+                </div>
+                <div id="errors">
+                    <ul>
+                        <li id="upper">Atleast one uppercase</li>
+                        <li id="lower">Atleast one lowercase</li>
+                        <li id="special_char">Atleast one special symbol</li>
+                        <li id="number">Atleast one number</li>
+                        <li id="length">Atleast 6 characters</li>
+                    </ul>
+                </div>
+                <div id="checkbox">
+                    <input type="checkbox"><label for="remember">Remember me</label>
+                </div>
+                <div id="signin">
+                    <input type="submit" value="Sign In">
+                </div>
+                <div id="forget">
+                    <a href="#">Forget Password?</a>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="kinda.js"></script>
+</html>
